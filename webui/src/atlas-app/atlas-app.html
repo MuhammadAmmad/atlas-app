@@ -4,6 +4,8 @@
 <link rel="import" href="../../bower_components/paper-header-panel/paper-header-panel.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../bower_components/leaflet-map/leaflet-map.html">
 
 <dom-module id="atlas-app">
   <template>
@@ -14,6 +16,10 @@
 
       .nav {
         border-right: 1px solid #ccc;
+      }
+
+      .nav > div {
+        padding-top: 70px;
       }
 
       .main {
@@ -31,12 +37,25 @@
         left: 0px;
         right: 0px;
       }
+
+      leaflet-map {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+      }
     </style>
 
     <paper-drawer-panel id="drawerPanel" responsive-width="1280px">
 
       <div class="nav" drawer>
-        <!-- Nav Content -->
+        <!-- Nav Content -->        
+        <div role="listbox">
+          <paper-item>World</paper-item>
+          <paper-item>Asia</paper-item>
+          <paper-item>Europe</paper-item>
+        </div>
       </div>
 
       <paper-header-panel class="main" main mode="waterfall">
@@ -48,7 +67,8 @@
 
         <!-- Main Content -->
         <div class="content">
-          <h2 style="padding-left: 20px;">Hello [[prop1]]</h2>
+          <leaflet-map no-zoom-control latitude="51.505" longitude="-0.09" zoom="13">
+          </leaflet-map>
         </div>
 
       </paper-header-panel>

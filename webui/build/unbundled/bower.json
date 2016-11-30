@@ -8,7 +8,9 @@
     "paper-drawer-panel": "^1.0.10",
     "paper-header-panel": "^1.1.7",
     "paper-icon-button": "^1.1.4",
-    "paper-toolbar": "^1.1.7"
+    "paper-toolbar": "^1.1.7",
+    "paper-item": "^1.2.1",
+    "leaflet-map": "^1.2.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
