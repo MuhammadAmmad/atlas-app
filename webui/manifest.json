@@ -1,0 +1,7 @@
+{
+  "name": "atlas",
+  "short_name": "atlas",
+  "description": "cross platform world atlas",
+  "start_url": "/",
+  "display": "standalone"
+}
