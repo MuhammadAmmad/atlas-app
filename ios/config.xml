@@ -26,4 +26,6 @@
     <engine name="ios" spec="~4.3.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#42A5F5" />
+    <preference name="StatusBarStyle" value="lightcontent" />
 </widget>
