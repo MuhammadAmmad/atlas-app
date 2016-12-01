@@ -2160,6 +2160,12 @@ case"touchend":return this.addPointerListenerEnd(t,e,i,n);case"touchmove":return
 <dom-module id="atlas-app" assetpath="src/atlas-app/">
   <template>
     <style>
+
+      * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+      }
+      
       :host {
         display: block;
       }
