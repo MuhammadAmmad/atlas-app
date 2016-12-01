@@ -2223,7 +2223,10 @@ case"touchend":return this.addPointerListenerEnd(t,e,i,n);case"touchmove":return
 
         
         <div class="content">
-          <leaflet-map no-zoom-control="" latitude="51.505" longitude="-0.09" zoom="13">
+          <leaflet-map latitude="51.505" longitude="-0.09" zoom="13" no-zoom-control="{{leafletMapDisableZoomControl}}" no-attribution-control="{{leafletMapDisableAttribution}}">
+            <leaflet-tilelayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" max-zoom="18" nowrap="" detect-retina="{{leafletMapDetectRetina}}">
+            © <a href="http://openstreetmap.org">OpenStreetMap</a>
+            </leaflet-tilelayer>
           </leaflet-map>
         </div>
 
@@ -2232,7 +2235,7 @@ case"touchend":return this.addPointerListenerEnd(t,e,i,n);case"touchmove":return
     </paper-drawer-panel>
     
   </template>
-  <script>Polymer({is:"atlas-app",properties:{prop1:{type:String,value:"atlas-app"}}});</script>
+  <script>Polymer({is:"atlas-app",properties:{leafletMapDisableZoomControl:{type:Boolean,value:!0},leafletMapDisableAttribution:{type:Boolean,value:!1},leafletMapDetectRetina:{type:Boolean,value:!0}}});</script>
 </dom-module>
 </div>
     <atlas-app></atlas-app>

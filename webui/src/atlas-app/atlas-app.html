@@ -73,7 +73,21 @@
 
         <!-- Main Content -->
         <div class="content">
-          <leaflet-map no-zoom-control latitude="51.505" longitude="-0.09" zoom="13">
+          <leaflet-map
+              latitude="51.505"
+              longitude="-0.09"
+              zoom="13"
+              no-zoom-control={{leafletMapDisableZoomControl}}
+              no-attribution-control={{leafletMapDisableAttribution}}
+          >
+            <leaflet-tilelayer 
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              max-zoom="18"
+              noWrap
+              detect-retina={{leafletMapDetectRetina}}            
+            >
+            &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>
+            </leaflet-tilelayer>
           </leaflet-map>
         </div>
 
@@ -88,10 +102,22 @@
       is: 'atlas-app',
 
       properties: {
-        prop1: {
-          type: String,
-          value: 'atlas-app',
+
+        leafletMapDisableZoomControl: {
+          type: Boolean,
+          value: true,
         },
+
+        leafletMapDisableAttribution: {
+          type: Boolean,
+          value: false,
+        },
+
+        leafletMapDetectRetina: {
+          type: Boolean,
+          value: true,
+        },
+
       },
 
     });
