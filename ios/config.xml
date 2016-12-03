@@ -7,7 +7,7 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
+    <content src="http://localhost:49000" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -29,4 +29,6 @@
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="StatusBarStyle" value="lightcontent" />
     <plugin name="cordova-plugin-statusbar" spec="~2.2.0" />
+    <preference name="AlternateContentSrc" value="index.html" />
+    <plugin name="cordova-labs-local-webserver" spec="~2.3.1" />
 </widget>

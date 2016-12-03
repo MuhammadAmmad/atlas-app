@@ -38,7 +38,7 @@ var app = {
         mapboxgl.accessToken = '';
         var map = new mapboxgl.Map({
             container: 'mapPane',
-            style: 'http://10.0.0.5:80/res/natural_earth.vector.json',
+            style: 'http://localhost:49000/res/natural_earth.vector.json',
             attributionControl: false,
             maxZoom: 7
         });

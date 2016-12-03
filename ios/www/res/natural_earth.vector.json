@@ -1,19 +1,19 @@
 {
     "version": 8,
     "name": "Natural Earth",
-    "sprite": "http://10.0.0.5:80/sprites/bright-v9",
-    "glyphs": "http://10.0.0.5:80/glyphs/{fontstack}/{range}.pbf",
+    "sprite": "http://localhost:49000/sprites/bright-v9",
+    "glyphs": "http://localhost:49000/glyphs/{fontstack}/{range}.pbf",
     "sources": {
         "natural_earth": {
             "tiles": [
-                "http://10.0.0.5:80/vector/{z}/{x}/{y}.pbf"
+                "http://localhost:49000/vector/{z}/{x}/{y}.pbf"
             ],
             "maxzoom": 7,
             "type": "vector"
         },
         "ne_2_hr_lc_sr": {
             "tiles": [
-                "http://10.0.0.5:80/raster/{z}/{x}/{y}.webp.png"
+                "http://localhost:49000/raster/{z}/{x}/{y}.webp.png"
             ],
             "type": "raster",
             "tileSize": 256,
