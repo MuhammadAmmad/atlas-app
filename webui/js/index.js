@@ -35,11 +35,10 @@ var app = {
     },
 
     setupMap: function(){
-        mapboxgl.accessToken = 'pk.eyJ1IjoieGluZ2Z1cnlkYSIsImEiOiJhMWNmOWU2NGU5ODQ5NjE3Nzc4Y2ZiYjQzNzI0MTc5ZiJ9.iCaLgnYU9Se1gYtEPZBzEg';
+        mapboxgl.accessToken = '';
         var map = new mapboxgl.Map({
             container: 'mapPane',
             style: 'http://10.0.0.5:80/res/natural_earth.vector.json',
-            //style: 'mapbox://styles/mapbox/streets-v9',
             attributionControl: false,
             maxZoom: 7
         });

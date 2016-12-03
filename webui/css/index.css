@@ -13,7 +13,7 @@ body {
 
     margin:0px;
     padding:0px;
-
+    overflow: hidden;
 }
 
 /* Portrait layout (default) */
@@ -64,16 +64,33 @@ body {
     bottom: 0px;
     width: 230px;
     max-width: 80%;
+    overflow: auto;
 
-    background-color: pink;
+    background-color: white;
     opacity: 0.8;
     transition: 0.3s;
     transform: translate3d(-230px, 0px, 0px);
 }
 
-.menuContent{
-    padding: 20px;
-    padding-top: 40px;
+.menuContent {    
+    padding-top: 80px;  
+}
+
+.menuItem:first-child {
+    border-top: 1px solid lightgray;
+}
+
+.menuItem:last-child {
+    border-bottom: 0px;
+}
+
+.menuItem {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 23px;
+    margin: 0;    
+    border-bottom: 1px solid lightgray;
 }
 
 .menu.show {
